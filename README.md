@@ -1,4 +1,6 @@
 # All Stars Helsinki
+Visit [https://all-stars-helsinki.vercel.app/](https://all-stars-helsinki.vercel.app/)
+
 
 A modern, responsive web application for the All Stars Helsinki sports team. Built with React, Vite, and Tailwind CSS, this project features a clean design, dynamic pages, and a customizable theme using CSS variables.
 
