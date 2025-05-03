@@ -1,3 +1,6 @@
+import logo from "../assets/img/icons/logo.png";
+import hero from "../assets/img/pages/hero.png";
+
 export default function Home() {
   return (
     <>
@@ -5,8 +8,7 @@ export default function Home() {
       <section
         className="relative bg-primary text-light font-heading min-h-[70vh] flex items-center justify-center"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80')",
+          backgroundImage: `url(${hero})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -18,69 +20,7 @@ export default function Home() {
           {/* Logo */}
           <div className="mb-8">
             <div className="flex flex-col items-center">
-              <svg
-                width="260"
-                height="260"
-                viewBox="0 0 260 260"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g filter="url(#shadow)">
-                  <path
-                    d="M130 20L230 60V120C230 180 130 230 130 230C130 230 30 180 30 120V60L130 20Z"
-                    fill="#0A2342"
-                    stroke="#FFD700"
-                    strokeWidth="8"
-                  />
-                </g>
-                <polygon
-                  points="130,60 145,105 195,105 155,130 170,175 130,150 90,175 105,130 65,105 115,105"
-                  fill="#FFD700"
-                />
-                <text
-                  x="50%"
-                  y="58%"
-                  textAnchor="middle"
-                  fill="white"
-                  fontSize="38"
-                  fontWeight="bold"
-                  fontFamily="sans-serif"
-                  letterSpacing="2"
-                  dy=".3em"
-                >
-                  ALL STARS
-                </text>
-                <text
-                  x="50%"
-                  y="70%"
-                  textAnchor="middle"
-                  fill="white"
-                  fontSize="20"
-                  fontWeight="bold"
-                  fontFamily="sans-serif"
-                  letterSpacing="6"
-                >
-                  HELSINKI
-                </text>
-                <defs>
-                  <filter
-                    id="shadow"
-                    x="0"
-                    y="0"
-                    width="260"
-                    height="260"
-                    filterUnits="userSpaceOnUse"
-                  >
-                    <feDropShadow
-                      dx="0"
-                      dy="8"
-                      stdDeviation="8"
-                      floodColor="#000"
-                      floodOpacity="0.3"
-                    />
-                  </filter>
-                </defs>
-              </svg>
+              <img src={logo} alt="All Stars Helsinki" style={{ width: "300px" , height: "300px"}} />
             </div>
           </div>
           {/* Next Match Card */}

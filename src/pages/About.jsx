@@ -40,7 +40,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded shadow p-4">
               <h3 className="text-xl font-semibold text-primary">
-                Coach Rahim Uddin
+                Coach Mr X
               </h3>
               <p className="text-sm text-gray-700">
                 Head Coach – Tactical specialist, 10+ years experience coaching
@@ -49,7 +49,7 @@ export default function About() {
             </div>
             <div className="bg-white rounded shadow p-4">
               <h3 className="text-xl font-semibold text-primary">
-                Coach Sofia Niemi
+                Coach MRS X
               </h3>
               <p className="text-sm text-gray-700">
                 Fitness Coach – Focuses on player endurance, injury prevention,

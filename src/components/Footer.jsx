@@ -1,12 +1,15 @@
+import logo from "../assets/img/icons/logo.png";
+
 export default function Footer() {
   return (
-    <footer className="bg-primary text-light font-body py-8 mt-12">
+    <footer className="bg-primary text-light font-body py-8 mt-12 relative">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="text-lg font-bold tracking-wide">
-          All Stars Helsinki
+          <img src={logo} alt="All Stars Helsinki" className="w-100 h-20" />
         </div>
         <div className="text-sm">
-          &copy; {new Date().getFullYear()} All rights reserved.
+          All Stars Helsinki &copy; {new Date().getFullYear()} All rights
+          reserved.
         </div>
         <div className="flex space-x-4">
           {/* Social icons as placeholders */}
@@ -38,6 +41,18 @@ export default function Footer() {
             </svg>
           </a>
         </div>
+      </div>
+      {/* Bottom right developer credit */}
+      <div className="absolute right-4 bottom-2 text-xs text-[var(--color-yellow)] opacity-80 md:text-right">
+        Developed by{" "}
+        <a
+          href="https://www.linkedin.com/in/kajol-sutra-dhar"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-yellow-400"
+        >
+          Kajol Sutra Dhar
+        </a>
       </div>
     </footer>
   );

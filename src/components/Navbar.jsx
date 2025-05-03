@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/img/icons/logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         {/* Logo */}
         <NavLink to="/" className="text-2xl font-bold tracking-wide">
-          All Stars Helsinki
+          <img src={logo} alt="All Stars Helsinki" className="w-100 h-20" />
         </NavLink>
 
         {/* Desktop Nav */}
